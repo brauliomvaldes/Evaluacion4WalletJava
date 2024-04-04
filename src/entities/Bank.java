@@ -1,42 +1,48 @@
 package entities;
 
-public class Bank  {
-
-	int bank_id;
-	String bank_nombre;
-	boolean bank_state;
-
-	public Bank() {};
+// Clase que representa un banco
+public class Bank {
 	
-	public Bank(int bank_id, String bank_nombre, boolean bank_state) {
-		super();
-		this.bank_id = bank_id;
-		this.bank_nombre = bank_nombre;
-		this.bank_state = bank_state;
-	}
+    // Campos del banco
+    private int bank_id; // Identificador único del banco
+    private String bank_nombre; // Nombre del banco
+    private boolean bank_state; // Estado del banco (activo/inactivo)
 
-	public int getBank_id() {
-		return bank_id;
-	}
+    // Constructor predeterminado
+    public Bank() {}
 
-	public void setBank_id(int bank_id) {
-		this.bank_id = bank_id;
-	}
+    // Constructor con parámetros
+    // Mejora: Un constructor con parámetros puede ser útil para inicializar todos los campos del banco
+    public Bank(int bank_id, String bank_nombre, boolean bank_state) {
+        this.bank_id = bank_id;
+        this.bank_nombre = bank_nombre;
+        this.bank_state = bank_state;
+    }
 
-	public String getBank_nombre() {
-		return bank_nombre;
-	}
+    // Getters y setters para cada campo
 
-	public void setBank_nombre(String bank_nombre) {
-		this.bank_nombre = bank_nombre;
-	}
+    public int getBank_id() {
+        return bank_id;
+    }
 
-	public boolean isBank_state() {
-		return bank_state;
-	}
+    public void setBank_id(int bank_id) {
+        this.bank_id = bank_id;
+    }
 
-	public void setBank_state(boolean bank_state) {
-		this.bank_state = bank_state;
-	}
+    public String getBank_nombre() {
+        return bank_nombre;
+    }
+
+    public void setBank_nombre(String bank_nombre) {
+        this.bank_nombre = bank_nombre;
+    }
+
+    public boolean isBank_state() {
+        return bank_state;
+    }
+
+    public void setBank_state(boolean bank_state) {
+        this.bank_state = bank_state;
+    }
 
 }

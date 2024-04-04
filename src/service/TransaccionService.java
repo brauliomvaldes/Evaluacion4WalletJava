@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import entities.Transaction;
 import persistence.IUseEntities;
 
-public class Transacciones implements IUseEntities<Transaction>{
+public class TransaccionService implements IUseEntities<Transaction>{
 
 	public void findAll(ArrayList<Transaction> transactions){
 		transactions.forEach(t->{

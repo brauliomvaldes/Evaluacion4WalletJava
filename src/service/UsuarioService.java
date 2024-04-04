@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import entities.User;
 import persistence.IUseEntities;
 
-public class Usuarios implements IUseEntities<User>{
+public class UsuarioService implements IUseEntities<User>{
 
 	public void findAll(ArrayList<User> users){
 		users.forEach(u->{
