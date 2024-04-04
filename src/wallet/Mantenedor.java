@@ -10,9 +10,9 @@ import entities.Currencyy;
 import entities.Transaction;
 import entities.TypeOfAccount;
 import entities.User;
-import service.Cuentas;
-import service.Transacciones;
-import service.Usuarios;
+import service.CuentaService;
+import service.TransaccionService;
+import service.UsuarioService;
 
 public final class Mantenedor {
 
@@ -54,7 +54,7 @@ public final class Mantenedor {
 	public static void mantenedorUsuarios(ArrayList<User> usuarios, Scanner leeteclado) {
 		String opcion;
 		int id;
-		Usuarios usu = new Usuarios();
+		UsuarioService usu = new UsuarioService();
 		do {
 			// menu
 			mantenedor("USUARIOS");
@@ -93,7 +93,7 @@ public final class Mantenedor {
 										 ArrayList<Currencyy> monedas,
 										 Scanner leeteclado) {
 		String opcion;
-		Cuentas ctas = new Cuentas();
+		CuentaService ctas = new CuentaService();
 		do {
 			mantenedor("CUENTAS");
 			opcion = leeteclado.next();
@@ -128,7 +128,7 @@ public final class Mantenedor {
 
 	public static void mantenedorTransacciones(ArrayList<Transaction> transacciones, Scanner leeteclado) {
 		String opcion;
-		Transacciones trf = new Transacciones();
+		TransaccionService trf = new TransaccionService();
 		do {
 			// menu
 			mantenedor("TRANSACCIONES");
